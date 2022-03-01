@@ -1,0 +1,25 @@
+{
+  "name": "plantcare-backend",
+  "version": "1.0.0",
+  "description": "PLANTCARE",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bensilvoza/PLANTCARE-BACKEND.git"
+  },
+  "author": "Chris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bensilvoza/PLANTCARE-BACKEND/issues"
+  },
+  "homepage": "https://github.com/bensilvoza/PLANTCARE-BACKEND#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.2.1"
+  }
+}
