@@ -29,5 +29,20 @@ router.post("/register", async function (req, res) {
   res.json("User registered");
 });
 
+// ===============
+// register/update
+// ===============
+router.get("/register/update", async function (req, res) {
+  res.json("");
+});
+
+router.post("/register/update", async function (req, res) {
+  var data = await Register.findOne({ email: req.body.email });
+  data["password"] = req.body.password;
+  await Register.findOneAndUpdate({ email: req.body.email }, data);
+
+  res.json("user updated");
+});
+
 // exports
 module.exports = router;

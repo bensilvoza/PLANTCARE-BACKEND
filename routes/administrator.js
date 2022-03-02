@@ -10,6 +10,13 @@ router.get("/administrator", async function (req, res) {
   res.json(getUsers);
 });
 
+// ========================
+// /administrator/delete/id
+// ========================
+router.get("/administrator/delete/:id", async function (req, res) {
+  await Register.findByIdAndDelete(req.params.id);
+});
+
 // =====================
 // /administrator/create
 // =====================
